@@ -1,6 +1,6 @@
 ﻿namespace WebApplication1
 {
-    public interface IClass
+    public interface IUserService
     {
         Task<User> GetUser(int  id);    
     }

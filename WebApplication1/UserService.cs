@@ -4,11 +4,11 @@ using Newtonsoft.Json;
 
 namespace WebApplication1
 {
-    public class Class : IClass
+    public class UserService : IUserService
     {
         private readonly IDistributedCache _cache;
 
-        public Class(IDistributedCache cache)
+        public UserService(IDistributedCache cache)
         {
             _cache = cache;
         }
@@ -22,11 +22,9 @@ namespace WebApplication1
             if (user == null)
             {
                 Thread.Sleep(5000);
-                user = Users.First(x=>x.Id==id);
-                // если пользователь найден, то добавляем в кэш
+                user = Users.First(x => x.Id == id);
                 if (user != null)
                 {
-                    Console.WriteLine($"{user.Name} извлечен из базы данных");
                     userString = JsonConvert.SerializeObject(user);
                     await _cache.SetStringAsync(user.Id.ToString(), userString, new DistributedCacheEntryOptions
                     {
@@ -41,7 +39,7 @@ namespace WebApplication1
             return user;
 
         }
-        public List<User>  Users = new List<User>() 
+        public List<User> Users = new List<User>()
         {
             new User { Id = 1, Name = "User1" },
             new User { Id = 2, Name = "User2" },
