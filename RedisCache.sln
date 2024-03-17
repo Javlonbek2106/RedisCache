@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34205.153
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cache", "WebApplication1\Cache.csproj", "{64EF9D87-1431-4DC4-86F7-4733950103E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cache", "WebApplication1\Cache.csproj", "{64EF9D87-1431-4DC4-86F7-4733950103E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheWithNewPackage", "CacheWithNewPackage\CacheWithNewPackage.csproj", "{B075B2BF-D6B5-44D6-8DC3-242E2F0E8FAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{64EF9D87-1431-4DC4-86F7-4733950103E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64EF9D87-1431-4DC4-86F7-4733950103E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64EF9D87-1431-4DC4-86F7-4733950103E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B075B2BF-D6B5-44D6-8DC3-242E2F0E8FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B075B2BF-D6B5-44D6-8DC3-242E2F0E8FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B075B2BF-D6B5-44D6-8DC3-242E2F0E8FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B075B2BF-D6B5-44D6-8DC3-242E2F0E8FAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
